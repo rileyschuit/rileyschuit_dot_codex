@@ -1,11 +1,33 @@
-# This repository is a portable Codex configuration backup, not a runtime dump.
-# Keep the allowlist small so credentials, conversation state, caches, and
-# downloaded plugins are never added by accident.
+# This repository preserves the portable Codex profile and conversation history.
+# Caches, generated plugins, and credentials are deliberately excluded.
 /*
 !/.gitignore
 !/config.toml
 !/hooks.json
 !/herdr-agent-state.sh
+
+# Recoverable history and local Codex state.
+!/.codex-global-state.json
+!/.codex-global-state.json.bak
+!/archived_sessions/
+!/archived_sessions/**
+!/computer-use/
+!/computer-use/config.json
+!/external_agent_session_imports.json
+!/goals_*.sqlite*
+!/history.jsonl
+!/installation_id
+!/logs_*.sqlite*
+!/memories_*.sqlite*
+!/queue_*.sqlite*
+!/session_index.jsonl
+!/sessions/
+!/sessions/**
+!/sqlite/
+!/sqlite/**
+!/state_*.sqlite*
+!/thread_history_*.sqlite*
+!/version.json
 
 # User-installed skills belong in the profile. Built-in system skills and the
 # Omarchy symlinks are supplied by Codex/the OS and are intentionally omitted.
@@ -15,3 +37,14 @@
 /skills/.system/
 /skills/diagnose-crash
 /skills/omarchy
+
+# Never commit authentication, generated bundles, caches, or transient IPC.
+/auth.json
+/cache/
+/.tmp/
+/plugins/
+/ipc/
+/thread-writer-locks/
+/tmp/
+/vendor_imports/
+/shell_snapshots/

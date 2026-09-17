@@ -1,0 +1,23 @@
+{
+  "records": [],
+  "detected_connector_records": [
+    {
+      "source_path": "/home/rileyschuit/.claude/projects/-home-rileyschuit--config-Claude-scratch-workspaces-6446fd73-ea8f-4639-b97e-93de57eb5f8c-08903e51-3960-44db-b05c-3a3cd2dba445-scratch-2026-09-06-4c303e/1211dcb3-219f-47a3-a9bf-08402514cdc8.jsonl",
+      "connector_names": [
+        "Personal MCP"
+      ]
+    },
+    {
+      "source_path": "/home/rileyschuit/.claude/projects/-home-rileyschuit--config-Claude-scratch-workspaces-6446fd73-ea8f-4639-b97e-93de57eb5f8c-08903e51-3960-44db-b05c-3a3cd2dba445-scratch-2026-09-08-25adf0/9cf4f939-fdb5-4d27-aefe-a914c220dbcc.jsonl",
+      "connector_names": [
+        "Personal MCP"
+      ]
+    },
+    {
+      "source_path": "/home/rileyschuit/.claude/projects/-home-rileyschuit--config-Claude-scratch-workspaces-6446fd73-ea8f-4639-b97e-93de57eb5f8c-08903e51-3960-44db-b05c-3a3cd2dba445-scratch-2026-09-08-a0913d/5b635f8b-4167-42e9-bc5b-c04cc87d8e46.jsonl",
+      "connector_names": [
+        "Personal MCP"
+      ]
+    }
+  ]
+}
