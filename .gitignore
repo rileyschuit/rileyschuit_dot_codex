@@ -8,6 +8,7 @@
 !/herdr-agent-state.sh
 !/scripts/
 !/scripts/codex-push.sh
+/scripts/*.log
 
 # Recoverable history and local Codex state.
 !/.codex-global-state.json
