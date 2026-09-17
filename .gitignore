@@ -6,6 +6,8 @@
 !/config.toml
 !/hooks.json
 !/herdr-agent-state.sh
+!/scripts/
+!/scripts/codex-push.sh
 
 # Recoverable history and local Codex state.
 !/.codex-global-state.json

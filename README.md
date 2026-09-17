@@ -48,7 +48,20 @@ including configuration and conversation history.
 If the restore is successful, remove `~/.codex.before-restore` after you have
 confirmed your history and settings are present.
 
-## Updating this backup
+## Nightly backup
+
+`codex-push.timer` runs every night at midnight and commits then pushes any
+changed tracked profile or history files. `Persistent=true` means systemd runs a
+missed backup shortly after the next user login.
+
+Check it with:
+
+```bash
+systemctl --user status codex-push.timer
+journalctl --user -u codex-push.service
+```
+
+## Manual backup
 
 Review and push changes whenever you want to snapshot new history:
 
