@@ -1,0 +1,17 @@
+# This repository is a portable Codex configuration backup, not a runtime dump.
+# Keep the allowlist small so credentials, conversation state, caches, and
+# downloaded plugins are never added by accident.
+/*
+!/.gitignore
+!/config.toml
+!/hooks.json
+!/herdr-agent-state.sh
+
+# User-installed skills belong in the profile. Built-in system skills and the
+# Omarchy symlinks are supplied by Codex/the OS and are intentionally omitted.
+!/skills/
+!/skills/*/
+!/skills/*/**
+/skills/.system/
+/skills/diagnose-crash
+/skills/omarchy
