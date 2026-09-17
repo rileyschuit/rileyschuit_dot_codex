@@ -2,6 +2,7 @@
 # Caches, generated plugins, and credentials are deliberately excluded.
 /*
 !/.gitignore
+!/README.md
 !/config.toml
 !/hooks.json
 !/herdr-agent-state.sh
